@@ -4,14 +4,20 @@ Integración de un Módulo de medición de distancia láser de alta presión en 
 Módulo Laser Range (M01, 6 pines) con ESP32 (LOLIN32)
 
 Integración de un Módulo de medición de distancia láser de alta presión en una placa de desarrollo ESP32 Wemos Lolin32. 
+
 Materiales: Módulo Laser ranging sensor de 50m de Liancheng Electronics (Aliespress).
+
 Ejemplo mínimo y funcional para leer distancias por UART desde un módulo láser M01 (placa de 6 pines) usando un ESP32 (Wemos LOLIN32).
 Teclas: Q (medir), L (laser ON), K (laser OFF), R (reset del módulo).
+
 Hardware
 •	Módulo láser M01 (placa 6 pines). Liancheng Electronics (Shenzhen) Co., Ltd. Store) AliExpress
 •	ESP32 Wemos LOLIN32 (cualquier ESP32 sirve).
+
 •	Alimentación 3.3 V (mín. ~150 mA recomendados).
+
 •	Cables Dupont / soldadura.
+
 Pinout del módulo (de arriba → abajo)
 1.	MIN (3V3) – alimentación 3.3 V
 2.	ENA – enable (activo en alto)
