@@ -19,25 +19,29 @@ Hardware
 •	Cables Dupont / soldadura.
 
 Pinout del módulo (de arriba → abajo)
+
 1.	MIN (3V3) – alimentación 3.3 V
 2.	ENA – enable (activo en alto)
-3.	GND – masa
-4.	RXD – entrada UART del módulo
-5.	TXD – salida UART del módulo
-6.	NC
+4.	GND – masa
+5.	RXD – entrada UART del módulo
+6.	TXD – salida UART del módulo
+7.	NC
+8.	
 Colores del mazo (según fabricante)
 •	Rojo = MIN (3V3)
 •	Negro = GND
 •	Verde = RXD (del módulo)
 •	Amarillo = TXD (del módulo)
+
 Ojo: TX del módulo → RX del ESP32, RX del módulo ← TX del ESP32 (cruzado).
 Conexión recomendada (ESP32 LOLIN32)
+
 •	Rojo (MIN) → 3V3
 •	Negro (GND) → GND
 •	Amarillo (TXD módulo) → GPIO33 (RX del ESP32)
 •	Verde (RXD módulo) ← GPIO32 (TX del ESP32)
 •	ENA (si está accesible) → GPIO5 en HIGH (o directo a 3V3)
-Si tu mazo solo saca 4 hilos (rojo/negro/verde/amarillo), ENA suele ir integrado a alto y puedes ignorarlo.
+Si tu mazo solo saca 4 hilos (rojo/negro/verde/amarillo), ENA suele ir integrado a alto debes conectarlo.
 ________________________________________
 Uso
 1.	Carga el sketch y abre Monitor Serie a 115200.
